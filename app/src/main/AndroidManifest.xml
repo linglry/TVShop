@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.tvshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 调用系统相册所需权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utils.Global"
+        android:allowBackup="true"
+        android:icon="@drawable/login_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".activity.SetActivity" />
+        <activity android:name=".activity.SetBasicActivity" />
+        <activity android:name=".activity.SetPswActivity" />
+        <activity android:name=".activity.SetAddressActivity" />
+        <activity android:name=".activity.Login2Activity" />
+        <activity android:name=".activity.UserRegisterActivity" />
+        <activity android:name=".activity.ShopActivity" />
+        <activity android:name=".activity.ShopGoodsActivity" />
+        <activity android:name=".activity.ShopAddGoodsActivity" />
+        <activity android:name=".activity.ShopUpdateGoodsActivity" />
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.FavActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.GoodsActivity" />
+        <activity android:name=".activity.OrderCheckActivity" />
+        <activity android:name=".activity.ShopOrderActivity" />
+        <activity android:name=".activity.ShopOrderCheckActivity"></activity>
+    </application>
+
+</manifest>

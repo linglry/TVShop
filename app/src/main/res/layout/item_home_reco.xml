@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_hot_reco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_middle"
+        android:background="#8e8bf2" />
+
+    <TextView
+        android:id="@+id/tv_recom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="20dp"
+        android:text="热门推荐"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/red"
+        android:textSize="@dimen/small_middle_text_size" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_recom"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:layout_width="@dimen/divider_height_middle"
+                android:layout_height="match_parent"
+                android:background="#d7d7d7"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_reco"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/pic3" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/worth_to_buy" />
+
+                <TextView
+                    android:id="@+id/tv_recom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:text="值得买"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_recom_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView4"
+                    android:layout_below="@+id/tv_recom_title"
+                    android:text="运动鞋休闲鞋"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/small_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_recom2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/gy" />
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/goods_recom" />
+
+                <TextView
+                    android:id="@+id/tv_recom_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView5"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:text="精选推荐"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_recom_title2"
+                    android:text="酒店式公寓短租"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/small_text_size" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/recom_devider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_middle"
+            android:background="#8e8bf2" />
+
+        <View
+            android:id="@+id/recom_devider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_middle"
+            android:layout_marginBottom="@dimen/home_item_margin"
+            android:background="#8e8bf2" />
+
+    </LinearLayout>
+
+</RelativeLayout>
